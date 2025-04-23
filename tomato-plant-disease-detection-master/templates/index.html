@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Plant Disease Detection</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>1
+<body>
+    <header>
+        <h1 class="heading">Tomato Plant Disease Detection</h1>
+<br>
+        <nav>
+            <ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li>
+				<li><a href="{{ url_for('upload') }}">Upload Image</a></li>
+				<li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <form action="/upload" method="post" enctype="multipart/form-data"> -->
+            <!-- <input type="submit" value="Upload"> -->
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Tomato Plant Disease Detection</h2>
+            <p>Upload an image of a tomato plant leaf to detect diseases.</p>
+            <a href="{{ url_for('upload') }}" class="btn">Upload Image</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tomato Plant Disease Detection</p>
+    </footer>
+</body>
+</html>
+
